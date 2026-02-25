@@ -8,6 +8,10 @@ from datetime import datetime
 import pytz
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # --- Environment Variable Loading ---
 # Load configuration from environment
